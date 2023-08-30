@@ -547,11 +547,11 @@ td {
 
 }
 
-.table-button-yellow {
+.table-button-blue {
 
     font-weight: bold;
     text-decoration: none;
-    background-color: var(--yellow-color);
+    background-color: var(--blue-color);
     color: white;
     padding-right: 2vh;
     padding-left: 2vh;
@@ -561,7 +561,7 @@ td {
     border: none;
 }
 
-.table-button-yellow:hover {
+.table-button-blue:hover {
     background-color: var(--gray-color);
     color: white;
 
