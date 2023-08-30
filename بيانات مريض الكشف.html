@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>بيانات مريض الكشف</title>
     <link rel="icon" href="img/logo.png">
+    
 </head>
 <body class="background-with-color">
     <nav class="navbar navbar-expand-lg navbar-light ">
@@ -68,7 +69,7 @@
                                 <tr>
                                     <th >مسلسل</th>
                                     <th >إسم العلاج</th>
-                                    <th >إسم العلاج</th>
+                                    <th >المخزون</th>
                                     <th >الكمية</th>
                                     <th  >خيارات</th>
                                 </tr>
@@ -87,16 +88,9 @@
                                                
                                             </select>
                                         </td>
+                                        <td></td>
                                         <td>
-                                            <select class="form-select ">
-                                                <option selected>الكمية</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="1">4</option>
-                                                <option value="1">5</option>
-                                                <option value="1">6</option>
-                                            </select>
+                                           <input type="number" required placeholder="الكمية">
                                         </td>
                                         <td><button type="button" class="table-button-blue">إضافة <i class="fa-solid fa-plus"></i></i></button></td>
                                     </tr>
@@ -108,6 +102,36 @@
                 </div>
             </div>
             <div class="row  ">
+                <div class="col-lg-6 text-center  p-1">
+                    <p id="nametwo">مرفقات المريض <i class="fa-solid fa-image"></i></p >
+                        
+                        <div class="beds-container">
+                            <div class="beds p-0" style="grid: gap 5px;">
+                                <img
+                                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                                class="w-100 shadow-1-strong rounded "
+                                alt="Yosemite National Park"
+                              />
+                              <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                              class="w-100 shadow-1-strong rounded "
+                              alt="Yosemite National Park"
+                            />
+                              <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                              class="w-100 shadow-1-strong rounded "
+                              alt="Yosemite National Park"
+                            />
+                              <img
+                              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                              class="w-100 shadow-1-strong rounded "
+                              alt="Yosemite National Park"
+                            />
+                                                                                  
+                            </div>
+                        </div>
+
+                </div>
                 <div class="col-lg-6 text-center  p-1">
                     <p id="nametwo">بيانات مريض الكشف <i class="fa-solid fa-user"></i></p >
                         
@@ -134,57 +158,23 @@
                                     <td>طارئ</td>
                                 </tr>
                                 <tr>
-                                    <th>اسم الطبيب</th>
-                                    <td>مصطفى محمد علي</td>
+                                    <th>المرفقات</th>
+                                    <td><a href=""> عرض المرفقات</a></td>
                                 </tr>
                             
                            
                             </tbody>
                         </table>
-                
-
-                  
-                </div>
-                <div class="col-lg-6 text-center p-1 ">
-                    <p id="nametwo">بيانات مريض الكشف <i class="fa-solid fa-user"></i></p >
                         
-                        <table class="table  table-striped">
-                            <tbody>
-                                <tr>
-                                    <th>الدرجة / الرتبة</th>
-                                    <td>طالب</td>
-                                </tr>
-                                <tr>
-                                    <th>اسم المريض</th>
-                                    <td>علي علي علي</td>
-                                </tr>
-                                <tr>
-                                    <th>العيادة</th>
-                                    <td>طبية</td>
-                                </tr>
-                                <tr>
-                                    <th>رقم الكشف</th>
-                                    <td>1500</td>
-                                </tr>
-                                <tr>
-                                    <th>نوع الكشف</th>
-                                    <td>طارئ</td>
-                                </tr>
-                                <tr>
-                                    <th>اسم الطبيب</th>
-                                    <td>مصطفى محمد علي</td>
-                                </tr>
-                            
-                           
-                            </tbody>
-                        </table>
                 
 
                   
                 </div>
+              
             </div>
         </div>
     </div>
+    
 </body>
 <script src="js/all.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
