@@ -398,13 +398,13 @@ select {
     font-size: 20px;
 }
 
-::-webkit-file-upload-button {
+/* ::-webkit-file-upload-button {
     display: none;
-}
+} */
 
-::file-selector-button {
+/* ::file-selector-button {
     display: none;
-}
+} */
 
 .upload {
     cursor: pointer;
@@ -675,5 +675,13 @@ width: 80% !important;
     transform: scale(1.06);
    
 }
-
+#paitant-image{
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    }
+    
+    
+#paitant-image:hover{
+transform: scale(1.08);
+opacity: 0.8;
+}
 

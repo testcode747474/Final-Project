@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>بيانات مريض الكشف</title>
     <link rel="icon" href="img/logo.png">
-    
+
 </head>
+
 <body class="background-with-color">
     <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container">
@@ -25,159 +26,203 @@
         <div class="container fadeInUp-animation ">
             <div class="row ">
                 <div class="col-lg-6 text-center p-1 ">
-                    <p id="nametwo">بيانات مريض الكشف <i class="fa-solid fa-user"></i></p >
-                        
-                        <table class="table  table-striped">
-                            <tbody>
-                                <tr>
-                                    <th>الدرجة / الرتبة</th>
-                                    <td>طالب</td>
-                                </tr>
-                                <tr>
-                                    <th>اسم المريض</th>
-                                    <td>علي علي علي</td>
-                                </tr>
-                                <tr>
-                                    <th>العيادة</th>
-                                    <td>طبية</td>
-                                </tr>
-                                <tr>
-                                    <th>رقم الكشف</th>
-                                    <td>1500</td>
-                                </tr>
-                                <tr>
-                                    <th>نوع الكشف</th>
-                                    <td>طارئ</td>
-                                </tr>
-                                <tr>
-                                    <th>اسم الطبيب</th>
-                                    <td>مصطفى محمد علي</td>
-                                </tr>
-                            
-                           
-                            </tbody>
-                        </table>
-                
+                    <p id="nametwo">بيانات مريض الكشف <i class="fa-solid fa-user"></i></p>
 
-                  
+                    <table class="table  table-striped">
+                        <tbody>
+                            <tr>
+                                <th>الدرجة / الرتبة</th>
+                                <td>طالب</td>
+                            </tr>
+                            <tr>
+                                <th>اسم المريض</th>
+                                <td>علي علي علي</td>
+                            </tr>
+                            <tr>
+                                <th>العيادة</th>
+                                <td>طبية</td>
+                            </tr>
+                            <tr>
+                                <th>رقم الكشف</th>
+                                <td>1500</td>
+                            </tr>
+                            <tr>
+                                <th>نوع الكشف</th>
+                                <td>طارئ</td>
+                            </tr>
+                            <tr>
+                                <th>اسم الطبيب</th>
+                                <td>مصطفى محمد علي</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+
                 </div>
                 <div class="col-lg-6 text-center p-1">
-                    <p id="nametwo">كتابة العلاج  <i class="fa-solid fa-user"></i></p >
-                        
-                        <table class="table  table-striped">
-                            <thead>
-                                <tr>
-                                    <th >مسلسل</th>
-                                    <th >إسم العلاج</th>
-                                    <th >المخزون</th>
-                                    <th >الكمية</th>
-                                    <th  >خيارات</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <form action="">
-                                    <tr>
-                                        <td></td>
-                                        <td>
-                                            <select class="form-select ">
-                                                <option selected>العلاج</option>
-                                                
-                                                    <option value="1">بانادول</option>
-                                                    <option value="2">كونجستال</option>
-                                      
-                                               
-                                            </select>
-                                        </td>
-                                        <td></td>
-                                        <td>
-                                           <input type="number" required placeholder="الكمية">
-                                        </td>
-                                        <td><button type="button" class="table-button-blue">إضافة <i class="fa-solid fa-plus"></i></i></button></td>
-                                    </tr>
-                            </tbody>
-                        </table>
-                
+                    <p id="nametwo">كتابة العلاج <i class="fa-solid fa-user"></i></p>
 
-                  
+                    <table class="table  table-striped">
+                        <thead>
+                            <tr>
+                                <th>مسلسل</th>
+                                <th>إسم العلاج</th>
+                                <th>المخزون</th>
+                                <th>الكمية</th>
+                                <th>خيارات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <form action="">
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <select class="form-select ">
+                                            <option selected>العلاج</option>
+
+                                            <option value="1">بانادول</option>
+                                            <option value="2">كونجستال</option>
+
+
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="number" required placeholder="الكمية">
+                                    </td>
+                                    <td><button type="button" class="table-button-blue">إضافة <i
+                                                class="fa-solid fa-plus"></i></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <select class="form-select ">
+                                            <option selected>العلاج</option>
+
+                                            <option value="1">بانادول</option>
+                                            <option value="2">كونجستال</option>
+
+
+                                        </select>
+                                    </td>
+                                    <td></td>
+                                    <td>
+                                        <input type="number" required placeholder="الكمية">
+                                    </td>
+                                    <td>
+                                        <div id="edit-div">
+                                            <button type="button" class="table-button-blue"
+                                                onclick="activateSave()">تعديل <i
+                                                    class="fa-solid fa-pen-to-square"></i></button>
+                                            <button type="button" class="table-button-red">حذف <i
+                                                    class="fa-solid fa-trash"></i></button>
+                                        </div>
+                                        <div id="save-div">
+                                            <button type="button" class="table-button-blue" onclick="activateEdit()">حفظ
+                                                <i class="fa-solid fa-pen-to-square"></i></button>
+                                            <button type="button" class="table-button-red">الغاء <i
+                                                    class="fa-solid fa-xmark"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="row  ">
                 <div class="col-lg-6 text-center  p-1">
-                    <p id="nametwo">مرفقات المريض <i class="fa-solid fa-image"></i></p >
-                        
-                        <div class="beds-container">
-                            <div class="beds p-0" style="grid: gap 5px;">
+                    <p id="nametwo">مرفقات المريض <i class="fa-solid fa-image"></i></p>
+
+                    <div class="beds-container">
+                        <div class="beds p-0" style="    grid-gap: 5px !important;">
+                            <a id="paitant-image" href="img/scaner.jpg"><img
+                                src="img/scaner.jpg"
+                                class="w-100 shadow-1-strong rounded " alt="Yosemite National Park" />
+                        </a>
+                        <a id="paitant-image" href="img/data.jpg">
+                            <img
+                                src="img/data.jpg"
+                                class="w-100 shadow-1-strong rounded " alt="Yosemite National Park" />
+                                
+                        </a>
+                            <a id="paitant-image" href="img/scaner.jpg"><img
+                                    src="img/scaner.jpg"
+                                    class="w-100 shadow-1-strong rounded " alt="Yosemite National Park" />
+                            </a>
+                            <a id="paitant-image" href="img/data.jpg">
                                 <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                                class="w-100 shadow-1-strong rounded "
-                                alt="Yosemite National Park"
-                              />
-                              <img
-                              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                              class="w-100 shadow-1-strong rounded "
-                              alt="Yosemite National Park"
-                            />
-                              <img
-                              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                              class="w-100 shadow-1-strong rounded "
-                              alt="Yosemite National Park"
-                            />
-                              <img
-                              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                              class="w-100 shadow-1-strong rounded "
-                              alt="Yosemite National Park"
-                            />
-                                                                                  
-                            </div>
+                                    src="img/data.jpg"
+                                    class="w-100 shadow-1-strong rounded " alt="Yosemite National Park" />
+                                    
+                            </a>
+
                         </div>
 
+                    </div>
                 </div>
-                <div class="col-lg-6 text-center  p-1">
-                    <p id="nametwo">بيانات مريض الكشف <i class="fa-solid fa-user"></i></p >
-                        
-                        <table class="table  table-striped">
-                            <tbody>
-                                <tr>
-                                    <th>الدرجة / الرتبة</th>
-                                    <td>طالب</td>
-                                </tr>
-                                <tr>
-                                    <th>اسم المريض</th>
-                                    <td>علي علي علي</td>
-                                </tr>
-                                <tr>
-                                    <th>العيادة</th>
-                                    <td>طبية</td>
-                                </tr>
-                                <tr>
-                                    <th>رقم الكشف</th>
-                                    <td>1500</td>
-                                </tr>
-                                <tr>
-                                    <th>نوع الكشف</th>
-                                    <td>طارئ</td>
-                                </tr>
-                                <tr>
-                                    <th>المرفقات</th>
-                                    <td><a href=""> عرض المرفقات</a></td>
-                                </tr>
-                            
-                           
-                            </tbody>
-                        </table>
-                        
-                
 
-                  
+
+                <div class="col-lg-6 text-center  p-1">
+                    <p id="nametwo">بيانات مريض الكشف <i class="fa-solid fa-user"></i></p>
+
+                    <table class="table  table-striped">
+                        <tbody>
+                            <tr>
+                                <th>الدرجة / الرتبة</th>
+                                <td>طالب</td>
+                            </tr>
+                            <tr>
+                                <th>اسم المريض</th>
+                                <td>علي علي علي</td>
+                            </tr>
+                            <tr>
+                                <th>العيادة</th>
+                                <td>طبية</td>
+                            </tr>
+                            <tr>
+                                <th>رقم الكشف</th>
+                                <td>1500</td>
+                            </tr>
+                            <tr>
+                                <th>نوع الكشف</th>
+                                <td>طارئ</td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+
+
+
                 </div>
-              
+
             </div>
         </div>
     </div>
-    
+
 </body>
+
 <script src="js/all.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const save_div = document.getElementById('save-div');
+    save_div.style.display = "none";
+    const edit_div = document.getElementById('edit-div');
+    function activateSave() {
+        save_div.style.display = "";
+        edit_div.style.display = "none";
+    }
+    function activateEdit() {
+        save_div.style.display = "none";
+        edit_div.style.display = "";
+    }
+</script>
 <!-- <script src="js/bootstrap.bundle.min.js.map"></script> -->
 
 </html>
