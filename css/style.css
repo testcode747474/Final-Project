@@ -679,6 +679,17 @@ z-index:10;
     font-weight: bold;
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     align-items: center;
+    justify-content: center;  position: relative;
+}
+.card-overlay{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.322);
+    display: none;
+    align-items: center;
     justify-content: center;
 }
 .my-card:hover{
@@ -686,7 +697,11 @@ z-index:10;
   transform: scale(1.02);
   opacity: 0.5;
   cursor: pointer;
+
 }
+.my-card:hover .card-overlay{
+ display: flex;
+  }
 
 #roomOne{
     background-image: url('../img/roomOne.png');
