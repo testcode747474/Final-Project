@@ -721,3 +721,17 @@ z-index:10;
     border-radius: 10px;
     background-color: var(--cold-color);
 }
+
+
+table.dataTable thead>tr>th.sorting{
+  
+ padding-right: 0px; 
+}
+table.dataTable thead>tr>th.sorting:before{
+    display: none;
+}table.dataTable thead>tr>th.sorting::after{
+    display: none;
+}
+.table>:not(caption)>*>* {
+    padding: 0.1rem 0.1rem;
+}
