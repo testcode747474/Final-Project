@@ -680,9 +680,10 @@ width: 80% !important;
     }
     
     
-#paitant-image:hover{
+#paitant-image-source:hover{
 transform: scale(1.02);
 opacity: 0.8;
+cursor: pointer;
 }
 #paitant-image-source{
 height: 15rem;
