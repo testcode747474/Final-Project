@@ -35,11 +35,11 @@
                                 <th>إسم العلاج</th>
                                 <th>الحد الادنى من الاكتفاء</th>
                                 <th>المخزون</th>
-                                <th>خيارات</th>
+                                <th>خيارات <i class="fa-solid fa-gear"></i></th>
                             </tr>
                         </thead>
                         <tbody>
-                            <form action="">
+                           
                                 <tr>
                                     <td></td>
                                     <td>
@@ -51,10 +51,11 @@
                                     <td>1500</td>
 
                                     <td>
-                                        <button onclick="activeDiv()" id="add-medicine-button" type="button" class="table-button-blue">إضافة كمية جديدة <i class="fa-solid fa-plus"></i></button>
-                                        <div id="add-medicine">
-                                        <input type="number" placeholder="الكمية">
-                                        <button onclick="activeButton()" class="table-button-red">حفظ <i class="fa-solid fa-floppy-disk"></i></button>
+                                        <button onclick="activeDiv({buttonId:'add-medicine-button',divId:'add-medicine'})" id="add-medicine-button" type="button" class="table-button-blue">إضافة كمية جديدة <i class="fa-solid fa-plus"></i></button>
+                                        <div id="add-medicine" style="display: none;">
+                                        <input id="input-table-edit" type="number" placeholder="الكمية" >
+                                        <button onclick="activeButton({buttonId:'add-medicine-button',divId:'add-medicine'})" class="table-button-blue">حفظ <i class="fa-solid fa-floppy-disk"></i></button>
+                                        <button onclick="activeButton({buttonId:'add-medicine-button',divId:'add-medicine'})" class="table-button-red">الغاء <i class="fa-solid fa-xmark"></i></button>
                                     </div>
                                     </td>
                                 </tr>
@@ -81,16 +82,15 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 
 <script>
-    const add_medicine_div = document.getElementById('add-medicine');
-    add_medicine_div.style.display = "none";
-    const add_medicine_button = document.getElementById('add-medicine-button');
-    function activeButton() {
-        add_medicine_div.style.display = "none";
-        add_medicine_button.style.display = "";
+
+
+    function activeButton({buttonId,divId}) {
+        document.getElementById(divId).style.display = "none";
+        document.getElementById(buttonId).style.display = "";
     }
-    function activeDiv() {
-        add_medicine_div.style.display = "";
-        add_medicine_button.style.display = "none";
+    function activeDiv({buttonId,divId}) {
+        document.getElementById(divId).style.display = "";
+        document.getElementById(buttonId).style.display = "none";
     }
 </script>
 <!-- <script src="js/bootstrap.bundle.min.js.map"></script> -->

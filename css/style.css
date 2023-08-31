@@ -692,9 +692,17 @@ z-index:10;
     background-image: url('../img/roomOne.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 #roomTwo{
     background-image: url('../img/roomTwo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+
+#input-table-edit{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--cold-color);
 }
