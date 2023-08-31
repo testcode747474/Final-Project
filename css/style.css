@@ -484,6 +484,23 @@ td {
     .print {
         display: none;
     }
+    #example{
+        font-size: 12px;
+    }
+    #example_length {
+        display: none !important;
+    }
+    #example_filter {
+        display: none !important;
+    }
+    #example_info {
+        display: none !important;
+    }
+    #example_paginate {
+        display: none !important;
+    }
+
+
 }
 
 .paitant-data {
@@ -723,15 +740,15 @@ z-index:10;
 }
 
 
-table.dataTable thead>tr>th.sorting{
+#example.dataTable thead>tr>th.sorting{
   
  padding-right: 0px; 
 }
-table.dataTable thead>tr>th.sorting:before{
+#example.dataTable thead>tr>th.sorting:before{
     display: none;
-}table.dataTable thead>tr>th.sorting::after{
+}#example.dataTable thead>tr>th.sorting::after{
     display: none;
 }
-.table>:not(caption)>*>* {
+#example>:not(caption)>*>* {
     padding: 0.1rem 0.1rem;
 }
