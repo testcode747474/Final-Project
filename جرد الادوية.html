@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>جرد الصيدلية</title>
+    <link rel="icon" href="img/logo.png">
+
+</head>
+
+<body class="background-with-color">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <div>
+                <button class="my-button ml-2">تسجيل الخروج <i class="fa-solid fa-right-from-bracket"></i></button>
+                <button class="my-button-blue">العودة للرئيسية <i class="fa-solid fa-house"></i></button>
+            </div>
+            <img src="img/logo.png" alt="logo">
+        </div>
+    </nav>
+    <div class="landing-three ">
+        <div class="container fadeInUp-animation ">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center p-1">
+                    <p id="nametwo">جرد الصيدلية <i class="fa-solid fa-filter"></i></p>
+
+                    <table class="table  table-striped">
+                        <thead>
+                            <tr>
+                                <th>مسلسل</th>
+                                <th>إسم العلاج</th>
+                                <th>الحد الادنى من الاكتفاء</th>
+                                <th>المخزون</th>
+                                <th>خيارات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <form action="">
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        بانادول
+                                    </td>
+                                    <td>
+                                        1500
+                                    </td>
+                                    <td>1500</td>
+
+                                    <td>
+                                        <button onclick="activeDiv()" id="add-medicine-button" type="button" class="table-button-blue">إضافة كمية جديدة <i class="fa-solid fa-plus"></i></button>
+                                        <div id="add-medicine">
+                                        <input type="number" placeholder="الكمية">
+                                        <button onclick="activeButton()" class="table-button-red">حفظ <i class="fa-solid fa-floppy-disk"></i></button>
+                                    </div>
+                                    </td>
+                                </tr>
+                             
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="col-lg-4 text-center">
+                    <button class="my-button custom-button mt-2 mb-2"><i class="fa-solid fa-forward-step"></i> التالي</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const add_medicine_div = document.getElementById('add-medicine');
+    add_medicine_div.style.display = "none";
+    const add_medicine_button = document.getElementById('add-medicine-button');
+    function activeButton() {
+        add_medicine_div.style.display = "none";
+        add_medicine_button.style.display = "";
+    }
+    function activeDiv() {
+        add_medicine_div.style.display = "";
+        add_medicine_button.style.display = "none";
+    }
+</script>
+<!-- <script src="js/bootstrap.bundle.min.js.map"></script> -->
+
+</html>
