@@ -619,13 +619,12 @@ td {
 .empty-bed {
     filter: drop-shadow(0 0 0.75rem var(--green-color));
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-    width: 80% !important;
+    max-width: 17vw;
 }
-
 .filled-bed {
     filter: drop-shadow(0 0 0.75rem var(--red-color));
     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
-    width: 80% !important;
+    max-width: 17vw;
 }
 
 #bedname {
@@ -741,7 +740,6 @@ z-index:10;
 
 
 #example.dataTable thead>tr>th.sorting{
-  
  padding-right: 0px; 
 }
 #example.dataTable thead>tr>th.sorting:before{
@@ -752,3 +750,12 @@ z-index:10;
 #example>:not(caption)>*>* {
     padding: 0.1rem 0.1rem;
 }
+#sec_One{
+
+    min-height: calc(100vh - 86.77px);
+
+}
+#sec_Two{
+
+        min-height: calc(100vh - 86.77px);
+    }
