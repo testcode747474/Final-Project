@@ -103,7 +103,7 @@
 /* end navbar */
 
 .landing-three {
-    height: calc(100vh - 89.59px);
+    min-height: calc(100vh - 89.59px);
 }
 
 
@@ -750,12 +750,8 @@ z-index:10;
 #example>:not(caption)>*>* {
     padding: 0.1rem 0.1rem;
 }
-#sec_One{
 
-    min-height: calc(100vh - 86.77px);
-
-}
-#sec_Two{
-
-        min-height: calc(100vh - 86.77px);
+    #footer-text{
+        margin: 0;
+        font-weight: bold;
     }
