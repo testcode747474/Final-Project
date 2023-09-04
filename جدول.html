@@ -62,12 +62,17 @@
                                 </div>
                                 <div class="col-lg-2 text-center">
                                     <button class="table-button-blue">تنفيذ</button>
-                                    <button class="table-button-red">تراجع</button>
+                                    <button class="table-button-red" onclick="popout({error:'eeror'})">تراجع</button>
 
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" id="popoutButton" class="my-button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" style="display: none;"></button>
+                    <!-- Modal -->
+                    
 
                     <table class="table  table-striped" id="my-table">
                         <thead>
@@ -118,7 +123,35 @@
                             </tr>
                         </tbody>
                     </table>
-                    <p id="table-rows"></p>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+
+
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12">
+
+                                            <div class="col-lg-12">
+                                                <i style="color: var(--red-color); font-size: 80px; margin-bottom: 15px;"
+                                                    class="fa-solid fa-circle-exclamation fa-beat-fade"></i>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <h4 id="errorText">هناك خطأ ما</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -128,15 +161,19 @@
         <div class="container">
         </div>
         <div class="text-center p-1">
-            <p id="footer-text">تم الانشاء بواسطة <span style="color: var(--red-color);">فرع النظم</span> الدفعة <span
-                    style="color: var(--red-color);">164</span> ضباط إحتياط ©</p>
+            <p id="footer-text">تم الانشاء بواسطة <span style="color: var(--red-color);">طلاب فرع النظم</span> الدفعة
+                <span style="color: var(--red-color);">164</span> ضباط إحتياط ©
+            </p>
         </div>
     </footer>
     <script>
-       var table= document.getElementById('my-table');
-       var text='عدد الكشوفات';
-       var textTwo=table.rows.length-1;
-       document.getElementById('table-rows').innerHTML=text.concat(" ", textTwo);
+        function popout({error}) {
+            
+            var pagebutton = document.getElementById("popoutButton");
+           
+            var errorMassage = document.getElementById("errorText");
+            error==''?errorMassage.innerHTML='هناك خطأ ما':errorMassage.innerHTML=error;
+         pagebutton.click();}
     </script>
 </body>
 
