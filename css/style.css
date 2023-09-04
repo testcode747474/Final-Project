@@ -15,6 +15,7 @@
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: none !important;
+    outline: none !important;
 }
 
 
@@ -761,10 +762,10 @@ z-index:10;
     outline: 1.5px solid #1b1b1b !important
 }
 #my-table th{
-  padding: 0px !important;  
+  padding: 0.1rem !important;  
 }
 #my-table td{
-    padding: 0px !important;  
+    padding: 0.1rem !important;  
 }
 #my-table>tbody>tr:nth-of-type(odd)>* {
    background-color: #d9d5d5;
@@ -774,7 +775,7 @@ z-index:10;
     padding: 0.3rem;
     padding-right: 0.6rem;
     width: 100%;
-    margin-left: 5px;
+
 
 }
 .my-table-select{
@@ -782,6 +783,11 @@ z-index:10;
     padding: 0.2rem;
     padding-right: 0.6rem;
     border-left: 0.5rem solid transparent !important;
-    width: 100%;
-   margin-right: 5px;
+    width: 90%;
+}
+@media only print {
+    #my-table {
+        font-size: 12px;
+    }
+
 }

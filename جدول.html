@@ -38,25 +38,36 @@
 
                 <div class="col-lg-12 text-center ">
                     <p id="nametwo">اسم الجدول <i class="fa-solid fa-user"></i></p>
-                  <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <div class="row justify-content-center mb-2">
-                            <div class="col-lg-4 text-center">
-                                <input class="my-table-input" type="text" placeholder="إبحث هنا .." >
-                            </div>
-                            <div class="col-lg-4 text-center ">
-                                <select class="my-table-select " id="">
-                                    <option value="">name</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-2 text-center">
-                                <button class="table-button-blue">تنفيذ</button>
-                                <button class="table-button-red">تراجع</button>
-                            
+                    <div class="row justify-content-center print">
+                        <div class="col-lg-12 text-center">
+                            <div class="row justify-content-center align-items-center mb-2">
+                                <div class="col-lg-2 text-center">
+                                    <input class="my-table-input" type="text" placeholder="إبحث هنا ..">
+                                </div>
+                                <div class="col-lg-2 text-center ">
+                                    <select class="my-table-select " id="">
+                                        <option value="">name</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-2 text-center ">
+                                    <div class="my-table-input" style="background-color: white;">
+
+
+                                        <div class="text-center">
+                                            <label for="checkbox-id" style="margin-left: 5px;">من كشوفات اليوم</label>
+                                            <input type="checkbox" id="checkbox-id">
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 text-center">
+                                    <button class="table-button-blue">تنفيذ</button>
+                                    <button class="table-button-red">تراجع</button>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-                  </div>
 
                     <table class="table  table-striped" id="my-table">
                         <thead>
@@ -107,20 +118,29 @@
                             </tr>
                         </tbody>
                     </table>
+                    <p id="table-rows"></p>
                 </div>
 
             </div>
         </div>
     </div>
-    <footer >
+    <footer>
         <div class="container">
         </div>
-        <div class="text-center p-1" >
-          <p id="footer-text">تم الانشاء بواسطة <span style="color: var(--red-color);">فرع النظم</span> الدفعة <span style="color: var(--red-color);">164</span> ضباط إحتياط ©</p>
+        <div class="text-center p-1">
+            <p id="footer-text">تم الانشاء بواسطة <span style="color: var(--red-color);">فرع النظم</span> الدفعة <span
+                    style="color: var(--red-color);">164</span> ضباط إحتياط ©</p>
         </div>
-      </footer>
+    </footer>
+    <script>
+       var table= document.getElementById('my-table');
+       var text='عدد الكشوفات';
+       var textTwo=table.rows.length-1;
+       document.getElementById('table-rows').innerHTML=text.concat(" ", textTwo);
+    </script>
 </body>
 
 <script src="js/all.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+
 </html>
