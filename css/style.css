@@ -103,7 +103,7 @@
 /* end navbar */
 
 .landing-three {
-    min-height: calc(100vh - 89.59px);
+    min-height: calc(100vh - 121.59px);
 }
 
 
@@ -755,3 +755,33 @@ z-index:10;
         margin: 0;
         font-weight: bold;
     }
+
+
+#my-table{
+    outline: 1.5px solid #1b1b1b !important
+}
+#my-table th{
+  padding: 0px !important;  
+}
+#my-table td{
+    padding: 0px !important;  
+}
+#my-table>tbody>tr:nth-of-type(odd)>* {
+   background-color: #d9d5d5;
+}
+.my-table-input{
+    border-radius: 15px;
+    padding: 0.3rem;
+    padding-right: 0.6rem;
+    width: 100%;
+    margin-left: 5px;
+
+}
+.my-table-select{
+    border-radius: 15px;
+    padding: 0.2rem;
+    padding-right: 0.6rem;
+    border-left: 0.5rem solid transparent !important;
+    width: 100%;
+   margin-right: 5px;
+}
