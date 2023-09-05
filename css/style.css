@@ -823,3 +823,9 @@ z-index:10;
     font-weight: bold;
     font-size: 20px;
 }
+
+
+#disablelink{
+    pointer-events: none;
+    background-color: var(--gray-color);
+}
