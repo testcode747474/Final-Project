@@ -641,8 +641,8 @@ td {
 .beds {
     display: grid;
     grid-template-areas: "a a a a";
-    grid-gap: 20px;
-    padding: 30px;
+    grid-gap: 10px;
+ 
     grid-auto-rows: auto;
 }
 
@@ -789,5 +789,37 @@ z-index:10;
     #my-table {
         font-size: 12px;
     }
+    .background-with-color {
+        background-color: white;
+    }
+    footer{
+        margin-top: 89.59px;
+    }
 
+}
+.beds-containerTwo {
+    grid-auto-rows: 80px;
+}
+
+.bedsTwo {
+    display: grid;
+    grid-template-areas: "a a a a a";
+    grid-gap: 10px;
+
+    grid-auto-rows: auto;
+}
+.beds-containerThree{
+    grid-auto-rows: 80px;
+}
+
+.bedsThree {
+    display: grid;
+    grid-template-areas: "a a";
+    grid-gap: 10px;
+
+    grid-auto-rows: auto;
+}
+.card-text{
+    font-weight: bold;
+    font-size: 20px;
 }
