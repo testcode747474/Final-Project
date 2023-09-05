@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="css/style.css">
     <title>جدول</title>
     <link rel="icon" href="img/logo.png">
+    <style>
+.pagination{
+    padding: 0;
+}
+    </style>
 </head>
 
 <body class="background-with-color">
@@ -123,6 +128,51 @@
                             </tr>
                         </tbody>
                     </table>
+
+                    <!-- pagenation -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                               <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-1">
+                                        <input type="number" class="my-table-input" min="1" max="44">
+                                    </div>
+                                    <div class="col-lg-1">
+                                       <p id="nametwo">من</p>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <input  value="44" class="my-table-input" readonly style="background-color: rgb(209, 209, 209);"> 
+                                    </div>
+                                    <div class="col-lg-2">
+                                       <select name="" class="my-table-select">
+                                        <option value="" selected>1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                        <option value="">1</option>
+                                       </select>
+                                    </div>
+                                    <div class="col-lg-1">
+                                     <button class="table-button-blue">إذهب</button>
+                                    </div>
+                                </div>
+                               </div>
+                                <div class="col-lg-4">
+                                <div class="row"style="justify-content: left;">
+                                    <div class="col-lg-2">
+                                        <button class="table-button-blue" style="width: 90%;">التالي</button>
+                                       </div>
+                                       <div class="col-lg-2">
+                                        <button class="table-button-red" style="width: 90%;">السابق</button>
+                                       </div>
+                                </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pagenation -->
+                  
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
